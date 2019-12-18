@@ -18,7 +18,7 @@ const Flag = ({ size = 64, code, type = 'shiny', style }: Props) => {
   return (
     <Image
       source={flag || unknownFlag}
-      style={[{ width: size, height: size }, style]}
+      style={[{ width: size, height: size, zIndex: 100 }, style]}
     />
   );
 };
