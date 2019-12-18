@@ -2,7 +2,7 @@
 
 import React from 'react';
 import { Image } from 'react-native';
-import * as flags from './flags';
+import * as flags from 'react-native-flags/flags';
 
 type Props = {
   size: 16 | 24 | 32 | 48 | 64,
