@@ -1,7 +1,7 @@
 // @flow
 
 import React from 'react';
-import { Image } from 'react-native';
+import { Thumbnail } from 'native-base';
 import * as flags from 'react-native-flags/flags';
 
 type Props = {
@@ -16,7 +16,7 @@ const Flag = ({ size = 64, code, type = 'shiny', style }: Props) => {
   const unknownFlag = flags[type][`icons${size}`]['unknown'];
 
   return (
-    <Image
+    <Thumbnail
       source={flag || unknownFlag}
       style={[{ width: size, height: size, zIndex: 100 }, style]}
     />
